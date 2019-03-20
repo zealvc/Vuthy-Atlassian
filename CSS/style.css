@@ -1,5 +1,6 @@
 /* Reset CSS */
 * {
+    font-family: 'Charlie Display',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,8 +8,149 @@
     vertical-align: baseline;
 }
 
+body {
+    color: #091E42;
+    font-family: 'Charlie Display',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    font-style: normal;
+    background-color: #FFF;
+    font-size: 16px;
+    height: 100%;
+    min-height: 100%;
+}
+
+.header-nav {
+    height: 72px;
+    background-color:#FFF;
+    height: 0 auto;
+    overflow: visible;
+}
+.global-nav--vz {
+    background-color: #FFF;
+    height: 72px;
+    line-height: 24px;
+    padding:0;
+    z-index: 12;
+    position: relative;
+}
+.global-nav--vz__background {
+    background-color: #FFF;
+    position: relative;
+    width: 100px;
+    z-index: 13;
+}
+.global-nav--vz__row {
+    line-height: 72px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+.nav--left {
+    align-items: center;
+    display: flex;
+    float: left;
+}
+.global-nav--vz__logo {
+    margin-right: 12px;
+    width: 193px;
+    height: 72px;
+    
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 @media (min-width: 0px) and (max-width: 539px) {
     .home-hero {
         background-image: url("https://wac-cdn.atlassian.com/dam/jcr:4ad14d09-926b-431d-92c4-339a548b53b3/Summit2019-WACTakeover-MobileHero.png?cdnVersion=ld");
@@ -52,4 +194,8 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-}
+} */
+
+
+
+
