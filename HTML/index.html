@@ -18,64 +18,52 @@
 
 </head>
 
-
 <body>
     <!-- Header body or NavigationBar -->
     <header class="header-nav">
         <div class="global-nav--vz">
             <div class="global-nav--vz__background">
                 <div class="global-nav--vz__row">
-                    <div class="nav--left">
-                        <div class="global-nav--vz__logo">
-                            <a href="/"><img src="https://wac-cdn.atlassian.com/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=ld" alt="Atlassian logo"></a>
+                    <!-- left navigation item -->
+                    <div class="nav-left">
+                        <div id="nav-left--vz__logo">
+                            <a href="#" ><img src="https://wac-cdn.atlassian.com/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=ld" alt="Atlassian logo" id="atlassian__Logo"></a>
                         </div>
-                        <div class="global-nav--vz__links">
-                            <div class="global-nav--vz__link has-dropdown">
-                                <a href="#" data-dropdown-id="dropdown-thyzevo1">Products</a>
-                            </div>
-                            <div class="global-nav--vz__link has-dropdown">
-                                <a href="#" data-dropdown-id="dropdown-thyzevo2">For teams</a>
-                            </div>
-                            <div class="global-nav--vz__link has dropdown">
-                                <a href="#" data-dropdown-id="dropdown-thyzevo3">Support</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav--right">
-                        <div class="global-nav--vz__buttons">
-                            <div class="global-nav--vz__button button-try">
-                                <a href="/try" class="global-nav--vz__button--primary">Try now</a>
-                            </div>
-                            <div class="global-nav--vz_-button">
-                                <a href="/buy" class="global-nav--vz__button--secondary">Buy</a>
-                            </div>
-                        </div>
-                        <a class="global-nav--vz__search-icon">Search</a>
-                        <a href="#" class="global-nav--vz__menu-toggle">Toogle menu</a>
-                        <div class="global-nav--vz__container--profile">
-                            <div class="global-nav--vz__container--profile">
-                                <a class="global-nav--vz__button--join" id="green_link">Join your team</a>
-                                <div class="sc-eHgmQL fKuojt"></div>
-                                <a class="global-nav--vz__button--login" href="https://id.atlassian.com/login?continue=https%3A%2F%2Fwww.atlassian.com%2F" id="green_link" rel="nofollow">Login</a>
+                        <!-- left items -->
+                        <div class="nav-left--vz__links">
+                            <div class="nav-left--vz__link">
+                                <ul class="nav-left--vz__link-lists">
+                                    <li><a href="#" ">Product</a></li>
+                                    <li><a href="#"  ">For Team</a></li>
+                                    <li><a href="#" ">Support</a></li> 
+                                </ul>       
                             </div>
                         </div>
                     </div>
+                    <!-- right navigation item -->
+                    <div class="nav-right">
+                        <!-- right items -->
+                        <ul class="nav-right--vz__link-lists">
+                            <li><a class="nav-right--vz-item nav-right--vz-item__try-button" href="#">Try free</a></li>
+                            <li><a class="nav-right--vz-item" href="#">Buy Now</a></li>
+                            <li><a class="nav-right--vz-item nav-right--vz-item__search-button" href="#"><i class="fas fa-search"></i></a></li>
+                            <li><a class="nav-right--vz-item" href="#">Join Your Team</a></li>
+                            <li><a class="nav-right--vz-item" href="#">Login</a></li>
+                        </ul> 
+                    </div>
+                    <!-- ---------- -->
                 </div>
             </div>
         </div>
     </header>
-
-
-
-
 
     <!-- Main body -->
     <main>
         <div class="home-hero text-center">
             <div class="home-hero__info">
                 <div class="home-hero__title home-hero__content">
-                    <h1>Summit 2019 is heading to Las Vegas</h1>
-                    <p>Extend your professional network, Sharpen your skills, and learn new ways to work at our annual user conference. Join us on April 9-11</p>
+                    <h1 id="hero-content__title">Summit 2019 is heading to Las Vegas</h1>
+                    <p>Extend your professional network, Sharpen your skills, and learn new ways to work<br> at our annual user conference. Join us on April 9-11</p>
                 </div>
                 <a href="#" class="home-hero__button">Register now</a>
             </div>
@@ -377,10 +365,6 @@
         </div>
     </main>
 
-
-
-    
-
     <!-- footer body-->
         <footer class="vz-footer">
             <div class="vz-footer__container"">
@@ -472,7 +456,7 @@
                                 </div>                        
                         </div>
                         <div class="vz-links__column">
-                                <div class="vz-colmn__heading">
+                                <div class="vz-column__heading">
                                     <h5>About Atlassian</h5> 
                                 </div>
                                 <div class="vz-column__link-box"> 
@@ -499,18 +483,20 @@
                         </div>
                     </div>
                  </div>
-
-
-
                 <div class="vz-footer__copyrights">
                     <div class="vz-copyrights__container">
-                        <div class="vz-copyrights__flex-container">
-
+                        <div class="vz-copyrights__flex--container">
                             <div class="vz-copyrights__link-box vz-copyrights__link-box--language-selector"> 
-                                <a class="vz-copyrights__link" href="#">English</a>
                                     <form action="#" method="GET">
                                         <select option="language-selector" name="url">
                                             <option disabled="">Choose your language</option>
+                                            <option aria-label="ខ្មែរ"​label="ខ្មែរ"​ lang="ca" class="notranslate SL_opaque" value="https://ca.atlassian.com">ខ្មែរ</option>
+                                            <option aria-label="日本語" label="日本語" lang="ja" class="notranslate SL_opaque" value="https://ja.atlassian.com/">日本語</option>
+                                            <option aria-label="Polski" label="Polski" lang="pl" class="notranslate SL_opaque" value="https://pl.atlassian.com/">Polski</option>
+                                            <option aria-label="Português" label="Português" lang="br" class="notranslate SL_opaque" value="https://br.atlassian.com/">Português</option>
+                                            <option aria-label="Română" label="Română" lang="ro" class="notranslate SL_opaque" value="https://www.atlassian.com/ro/">Română</option>
+                                            <option aria-label="Suomi" label="Suomi" lang="fi" class="notranslate SL_opaque" value="https://fi.atlassian.com/">Suomi</option>
+                                            <option aria-label="русский" label="русский" lang="ru" class="notranslate SL_opaque" value="https://ru.atlassian.com/">русский</option>
                                             <option aria-label="中文" label="中文" lang="zh" class="notranslate SL_opaque" value="https://cn.atlassian.com/">中文</option>
                                             <option aria-label="Čeština" label="Čeština" lang="cs" class="notranslate SL_opaque" value="https://cs.atlassian.com/">Čeština</option>
                                             <option aria-label="Deutsch" label="Deutsch" lang="de" class="notranslate SL_opaque" value="https://de.atlassian.com/">Deutsch</option>
@@ -521,30 +507,24 @@
                                             <option aria-label="한국어" label="한국어" lang="ko" class="notranslate SL_opaque" value="https://ko.atlassian.com/">한국어</option>
                                             <option aria-label="Magyar" label="Magyar" lang="hu" class="notranslate SL_opaque" value="https://hu.atlassian.com/">Magyar</option>
                                             <option aria-label="Nederlands" label="Nederlands" lang="nl" class="notranslate SL_opaque" value="https://nl.atlassian.com/">Nederlands</option>
-                                            <option aria-label="日本語" label="日本語" lang="ja" class="notranslate SL_opaque" value="https://ja.atlassian.com/">日本語</option>
-                                            <option aria-label="Polski" label="Polski" lang="pl" class="notranslate SL_opaque" value="https://pl.atlassian.com/">Polski</option>
-                                            <option aria-label="Português" label="Português" lang="br" class="notranslate SL_opaque" value="https://br.atlassian.com/">Português</option>
-                                            <option aria-label="Română" label="Română" lang="ro" class="notranslate SL_opaque" value="https://www.atlassian.com/ro/">Română</option>
-                                            <option aria-label="Suomi" label="Suomi" lang="fi" class="notranslate SL_opaque" value="https://fi.atlassian.com/">Suomi</option>
-                                            <option aria-label="русский" label="русский" lang="ru" class="notranslate SL_opaque" value="https://ru.atlassian.com/">русский</option>
+                                            
                                         </select>
                                     </form>
                             </div>
-
-
-                            <div class="vz-copyrights__link-box"> 
-                                <a class="vz-copyrights__link" href="#">Privacy policy</a> 
-                            </div>    
-                            <div class="vz-copyrights__link-box"> 
-                                <a class="vz-copyrights__link" href="#">Terms</a> 
-                            </div>    
-                            <div class="vz-copyrights__link-box"> 
-                                <a class="vz-copyrights__link" href="#">Modern Slavery Act</a> 
-                            </div>    
-                            <div class="vz-copyrights__link-box"> 
-                                <a class="vz-copyrights__link">Copyright © 2019 Atlassian</a> 
-                            </div>
-    
+                            
+                                <div class="vz-copyrights__link-box"> 
+                                    <a class="vz-copyrights__link" href="#">Privacy policy</a> 
+                                </div>    
+                                <div class="vz-copyrights__link-box"> 
+                                    <a class="vz-copyrights__link" href="#">Terms</a> 
+                                </div>    
+                                <div class="vz-copyrights__link-box"> 
+                                    <a class="vz-copyrights__link" href="#">Modern Slavery Act</a> 
+                                </div>    
+                                <div class="vz-copyrights__link-box"> 
+                                    <a class="vz-copyrights__link">Copyright © 2019 Atlassian</a> 
+                                </div>
+                        
                             <div class="vz-footer__social">
                                 <div class="vz-social__container">
                                     <ul>
@@ -563,7 +543,6 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
