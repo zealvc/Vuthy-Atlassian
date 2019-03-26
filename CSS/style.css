@@ -1,6 +1,13 @@
+html,body {
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;  
 }
 a {
     text-decoration: none;
@@ -32,15 +39,15 @@ a {
 .vz-navbar {
     width: 100%;
     display: block;
-    background-color: #abaaff;
+    background-color: white;
     border-bottom: 1px solid #ccc8c7;
-    height: 90px;
+    height: 100px;
     position: fixed;
     z-index: 1000;
 }
 .vz-navbar__left {
     float: left;
-    height: 105%;
+    height: 100%;
     align-items: center;
     display: flex;
 }
@@ -51,25 +58,40 @@ a {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 30px;
     margin-top: 30px;
-    margin-left: 500px;
+    margin-left: 400px;
 }
-.vz-navbar__right {
+.center-nav__item {
+    margin-right: 15px;
+    color: #632d17;
+}
+.vz-navbar__right{
     float: right;
+    margin-top: -40px;
+    margin-right: 5%;
 }
-.vz-navbar__box {
+.navbar-box a{
     background-color: rgb(69, 20, 0);
     border-radius: 30px;
-    height: 40px;
+    height: 36px;
     color: #fff;
-    min-width: 170px;
+    min-width: 165px;
+    padding:0 10px 0 5px;
     display: inline-flex;
     align-items: center;
 }
-.vz-navbar__box img {
-    height: 30px;
-    margin-top: 0px;
+.navbar-box img{
+    height: 26px;
 }
-.find-chipotle {
-    margin-left: 15px;
-    color: white;
+.navbar-box__icon{
+    margin: 0 15px 0 0;
+    position: relative;
+    display: flex;
+}
+.navbar-box__icon::after {
+    background-color: #fff;
+    content: "";
+    height: 20px;
+    position: absolute;
+    width: 1px;
+    margin: 3px 0 0px 28px;
 }
